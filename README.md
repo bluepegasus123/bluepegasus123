@@ -1,6 +1,6 @@
 ### Hi there!
 
-I'm William, a college student at UC Berkeley (graduating 2023) studying Computer and Data Science. I enjoy coding and designing applications to solve common day to day issues. 
+I'm William, a second year college student at UC Berkeley studying Computer and Data Science. I enjoy coding and designing applications to solve common day to day issues. 
 
 - I’m currently doing full stack web development at WDB, a UC Berkeley web development consulting club
 - I'm currently interning at 30Friends, a growth stage startup looking to introduce a new interactive-based web platform 
