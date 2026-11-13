@@ -27,8 +27,8 @@ enterprise workplace reservations and floor map view/edit operations.
     actually changed.
 - Led a migration of Envoy's Next.js apps to versioned static asset hosting
   (S3 + CloudFront), so open sessions no longer break when a new version rolls
-  out. Built shared CI workflows used across **7 repos** that deploy about
-  **70 times a month**.
+  out. Built shared CI workflows and rolled them out across **7 repos** that
+  deploy about **200 times a month**.
 
 ### Previously — DoorDash (Aug 2023–Sep 2025)
 
