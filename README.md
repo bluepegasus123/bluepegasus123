@@ -4,7 +4,7 @@ Software engineer building distributed backend systems — and increasingly focu
 on developer experience, platform, and infrastructure work: the tools, pipelines,
 and services that make other engineers faster and systems more reliable.
 
-- 🔭 Currently: Software Engineer @ Envoy (Oct 2025–present)
+- 🔭 Currently: Member of Technical Staff @ Envoy (Oct 2025–present)
 - 🌱 Exploring: developer experience, platform engineering, infrastructure,
   distributed systems, operating systems, storage
 
@@ -17,9 +17,18 @@ enterprise workplace reservations and floor map view/edit operations.
   caching, PostgreSQL indexes for common query patterns, and parallelized
   scatter-gather requests across three backend services — supporting
   **28.5M monthly requests**.
-- Built a unified Next.js + Kotlin system that renders different floor map views
-  for admins, visitors, and employees, with editable map views and draft changes
-  that can be published — **1.5M monthly loads**.
+- Leading the rollout of a Next.js + MapLibre floor map viewing and editing
+  frontend replacing Envoy's legacy floor map viewer/editor across live, shared,
+  and kiosk views — reaching **~9M employees** across **~87K companies**.
+  - Improved map pan, zoom, and tap frame rate on low-end kiosk displays by
+    **~17% (46 → 54 FPS)** by cutting per-frame main-thread work: rendering
+    selected markers in a lightweight overlay instead of re-sending all marker
+    data, and skipping label recomputation and re-renders unless the data
+    actually changed.
+- Led a migration of Envoy's Next.js apps to versioned static asset hosting
+  (S3 + CloudFront), so open sessions no longer break when a new version rolls
+  out. Built shared CI workflows used across **7 repos** that deploy about
+  **70 times a month**.
 
 ### Previously — DoorDash (Aug 2023–Sep 2025)
 
@@ -27,16 +36,15 @@ enterprise workplace reservations and floor map view/edit operations.
   for reliable bidirectional communication between Dasher app chat and SMS,
   with ordered delivery per conversation, idempotency, and retry semantics —
   saving ~**$1M/year** in delivery costs.
-- Built production-scale load testing for the chat platform by modeling
-  realistic customer, dasher, and AI-assisted support conversations from peak
-  production traffic — not isolated endpoint benchmarks — and used monthly
-  load tests to validate reliability, latency, and scalability.
+- Developed production-scale load tests that simulated peak production traffic
+  against the chat platform's golden paths, run monthly to continuously
+  validate reliability, latency, and scalability.
 - Automated customer support workflows that increased self-service adoption,
   reducing support costs by ~**$1M/year**.
 
 ### Stack
 
-- **Languages:** Java, Kotlin, SQL, TypeScript / JavaScript, Python
+- **Languages:** Java, Kotlin, SQL, TypeScript / JavaScript, Python, C
 - **Backend:** Spring Boot, REST APIs, Kafka, PostgreSQL, event-driven
   architecture, distributed systems
 - **Infrastructure:** Docker, ArgoCD, Git, CI/CD
